@@ -1,0 +1,11 @@
+{%extends 'base.html'%}
+{%block title%}Thunder{%endblock%}
+{%block content%}
+{%if user_exists%}
+     <p>{{real_name}} already taken. Try something else... </p>
+{%else%}
+    <h1>Registration Successful</h1>
+    <p>Account for {{name}} has been created successfully</p>
+    <a href="/login">Login</a>
+{%endif%}
+{%endblock%}

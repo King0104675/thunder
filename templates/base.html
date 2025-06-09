@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/favicon.png') }}">
+    <title>{%block title%}Thunder{%endblock%}</title>
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif; padding: 20px; background-color: #5f5f5;}
+        header {background: #90EE90; color: white; padding: 10px; text-align: center;}
+        footer {background: orange; padding: 10px; margin-top: 20px;}
+    </style>
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Thunder Logo" width="100" align="left">
+        <h1>THUNDER</h1>
+        <nav>
+            <a href="/">Home</a> &nbsp
+            <a href="/login">Login</a> &nbsp
+            <a href="/register">Register</a> &nbsp
+            <a href="/profile">Profile</a> &nbsp
+            <a href="/about">About</a> &nbsp
+            <a href="/contact">Contact</a> &nbsp
+            <a href="/logout">Logout</a> &nbsp
+        </nav>
+    </header>
+    <main>
+    {%block content%}
+    {%endblock%}
+    </main>
+
+    <footer>
+        <p>@ Powered by passion. Delivered with THUNDER</p>
+    </footer>
+
+</body>
+</html>

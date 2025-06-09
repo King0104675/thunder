@@ -1,0 +1,17 @@
+{%extends 'base.html'%}
+{%block title%}Thunder{%endblock%}
+{%block content%}
+<h1>LOGIN PAGE</h1>
+{% if logged_in %}
+    <h2>You are already logged in as {{ username }}</h2>
+    <a href="/profile">Go to your profile</a>
+{% else %}
+    <form method="POST" action="/submit">
+        <label>Username:</label><br>
+        <input type="text" name="username" placeholder="Enter your username"><br><br>
+        <label>Password:</label><br>
+        <input type="password" name="password" placeholder="Enter your password"><br><br>
+        <input type="submit" value="Login">
+    </form>
+{% endif %}
+{%endblock%}

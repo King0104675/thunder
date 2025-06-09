@@ -1,0 +1,11 @@
+{%extends 'base.html'%}
+{%block title%}Thunder{%endblock%}
+{%block content%}
+    {%if login_success%}
+        <h1>Login Successful</h1>
+        <p>Welcome {{name}}</p>
+    {%else%}
+        <h1>Login Failed</h1>
+        <p>{{error}}</p>
+    {%endif%}
+{%endblock%}

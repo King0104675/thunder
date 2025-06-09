@@ -1,0 +1,10 @@
+{%extends 'base.html'%}
+{%block title%}Thunder{%endblock%}
+{%block content%}
+<h1>{{website_user[username][0]}}</h1>
+<h2>Informations:</h2>
+<p>Username : {{username}}<br>
+    Mobile : {{website_user[username][1]}}<br>
+    Email : {{website_user[username][2]}}<br>
+</p>
+{%endblock%}
