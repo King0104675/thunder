@@ -3,9 +3,9 @@ from flask import Flask, render_template, redirect, Response, request, session
 app = Flask(__name__)
 app.secret_key = "king is great"
 website_user = {}
-@app.route('/thunder')
+@app.route('/')
 def home():
-    return render_template('index.html')
+    return render_template('home.html')
 
 @app.route('/login')
 def login():
