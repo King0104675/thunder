@@ -3,7 +3,7 @@ from flask import Flask, render_template, redirect, Response, request, session
 app = Flask(__name__)
 app.secret_key = "king is great"
 website_user = {}
-@app.route('/thunder/')
+@app.route('/thunder')
 def home():
     return render_template('home.html')
 
