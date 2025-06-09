@@ -5,7 +5,7 @@ app.secret_key = "king is great"
 website_user = {}
 @app.route('/thunder')
 def home():
-    return render_template('home.html')
+    return render_template('index.html')
 
 @app.route('/login')
 def login():
