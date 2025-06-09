@@ -4,6 +4,7 @@
     {%if login_success%}
         <h1>Login Successful</h1>
         <p>Welcome {{name}}</p>
+        <a href="url_for('/profile')">Go to your profile</a>
     {%else%}
         <h1>Login Failed</h1>
         <p>{{error}}</p>
